@@ -1,3 +1,6 @@
 [submodule "leiningen"]
 	path = leiningen
 	url = git@github.com:technomancy/leiningen.git
+[submodule "willgit"]
+	path = willgit
+	url = http://git.gitorious.org/willgit/mainline.git
