@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#echo $SHELL
+CASTLE="$HOME/.homesick/repos/$1"
+#echo "CASTLE: $CASTLE"
+if [[ -n "$1" && -d "$CASTLE" ]]; then
+  #echo $1
+  export PS1="(Castle:`basename \"$CASTLE\"`)\n$PS1"
+  cd $CASTLE
+  $SHELL
+fi
+exit 0
